@@ -1,11 +1,41 @@
-#N canvas 412 389 450 300 10;
-#X obj 54 250 outlet;
-#X obj 95 250 outlet;
-#X obj 137 250 outlet;
-#X obj 179 250 outlet;
-#X obj 221 250 outlet;
-#X text 65 266 RPM;
-#X text 99 266 Speed;
-#X text 137 266 Braking;
-#X text 188 266 Gear;
-#X text 225 265 Ingni;
+#N canvas 494 193 921 419 10;
+#X obj 684 362 outlet;
+#X obj 725 362 outlet;
+#X obj 767 362 outlet;
+#X obj 809 362 outlet;
+#X obj 851 362 outlet;
+#X text 695 378 RPM;
+#X text 729 378 Speed;
+#X text 767 378 Braking;
+#X text 818 378 Gear;
+#X text 855 377 Ingni;
+#X obj 1 1 cnv 20 200 60 empty empty Midi_inputs 20 12 0 14 -260097
+-66577 0;
+#X obj 15 28 bendin;
+#X obj 60 29 ctlin 1;
+#X obj 114 29 notein;
+#X obj 202 1 cnv 15 400 200 empty empty GUI_Controls 20 12 0 14 -4032
+-66577 0;
+#X obj 222 46 vsl 15 128 0 127 0 0 empty empty Gas 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 256 46 vsl 15 128 0 127 0 0 empty empty Brake 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 289 76 vradio 20 1 0 5 empty empty empty 0 -8 0 10 -262144 -1
+-1 0;
+#X obj 288 42 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 346 137 knob 32 32 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X obj 345 76 knob 32 32 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 24 1;
+#X text 220 183 Gas;
+#X text 245 183 Brake;
+#X text 286 182 Gear;
+#X text 313 157 1;
+#X text 313 137 2;
+#X text 313 118 3;
+#X text 312 97 4;
+#X text 312 78 5;
+#X text 311 44 Ignition;
+#X text 345 112 Speed;
+#X text 351 177 RPM;
