@@ -1,0 +1,11 @@
+#N canvas 412 389 450 300 10;
+#X obj 54 250 outlet;
+#X obj 95 250 outlet;
+#X obj 137 250 outlet;
+#X obj 179 250 outlet;
+#X obj 221 250 outlet;
+#X text 65 266 RPM;
+#X text 99 266 Speed;
+#X text 137 266 Braking;
+#X text 188 266 Gear;
+#X text 225 265 Ingni;

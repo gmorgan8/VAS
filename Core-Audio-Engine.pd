@@ -9,3 +9,5 @@
 #X text 65 19 Speed;
 #X text 99 19 Braking;
 #X text 144 20 Gear;
+#X obj 174 39 inlet;
+#X text 177 21 Ingni;
