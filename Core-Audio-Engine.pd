@@ -1,4 +1,4 @@
-#N canvas 399 94 1055 706 10;
+#N canvas 398 254 1055 706 10;
 #X obj 32 39 inlet;
 #X obj 68 39 inlet;
 #X obj 104 39 inlet;
@@ -11,3 +11,15 @@
 #X text 144 20 Gear;
 #X obj 174 39 inlet;
 #X text 177 21 Ingni;
+#X obj 748 111 soundfiler;
+#X floatatom 748 136 5 0 0 0 - - -;
+#X msg 748 73 read -resize Sounds/Carfullsound.wav array1;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array array1 3.45549e+06 float 2;
+#X coords 0 1 3.45549e+06 -1 200 140 1 0 0;
+#X restore 279 37 graph;
+#X obj 748 38 loadbang;
+#X text 732 10 Load Audio File;
+#X text 821 57 Temporary Sound File;
+#X connect 12 0 13 0;
+#X connect 16 0 14 0;
